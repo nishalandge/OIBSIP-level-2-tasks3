@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:beige ;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.task-input-frame {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.task-list-frame {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+form {
+    /*display: flex;*/
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-right: 10px;
+}
+
+
+form textarea#taskDescription {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 213px;
+    height: 100px; /* Set the fixed height to 100px */
+    resize: vertical; /* Allow vertical resizing */
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+}
+
+form button {
+    padding: 5px 10px;
+    background-color: #1bd37d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.scrollable-list {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    max-width: 150px;
+    /* Set a fixed width for columns */
+    white-space: pre-wrap;
+    /* Preserve whitespace, do not wrap */
+    overflow: hidden;
+    /* Hide any overflowing content */
+    text-overflow: ellipsis;
+    /* Show ellipsis (...) for overflowing content */
+}
+
+thead {
+    position: sticky;
+    top: 0;
+}
+
+td:nth-child(2) {
+    overflow-y: auto;
+    /* Enable vertical scrollbar for description column */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c82333;
+}
